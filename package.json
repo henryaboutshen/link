@@ -1,0 +1,22 @@
+{
+  "name": "link",
+  "version": "1.0.0",
+  "description": "MongoDB Sample.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenrySHENhr/link.git"
+  },
+  "author": "Henry Shen",
+  "bugs": {
+    "url": "https://github.com/HenrySHENhr/link/issues"
+  },
+  "homepage": "https://github.com/HenrySHENhr/link#readme",
+  "dependencies": {
+    "mongodb": "^3.5.5"
+  }
+}

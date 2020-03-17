@@ -1,0 +1,14 @@
+{
+	"id": "146e52f0-fd32-4814-8e58-8a3c0f4d5eb7",
+	"values": [
+		{
+			"key": "Case 1",
+			"value": "Case 1",
+			"enabled": true
+		}
+	],
+	"name": "Newman Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2020-03-17T16:44:28.352Z",
+	"_postman_exported_using": "Postman/7.20.1"
+}
