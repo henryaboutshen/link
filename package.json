@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node globals-generator.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter mochawesome"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/HenrySHENhr/link#readme",
   "dependencies": {
+    "mocha": "^7.1.1",
+    "mochawesome": "^5.0.0",
     "mongodb": "^3.5.5",
     "q": "^1.5.1"
   }

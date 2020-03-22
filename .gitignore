@@ -105,3 +105,6 @@ dist
 
 # Globals folder
 globals/
+
+# Mocha reports
+mochawesome-report/
