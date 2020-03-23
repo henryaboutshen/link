@@ -20,7 +20,6 @@
     "lodash": "^4.17.15",
     "mocha": "^7.1.1",
     "mochawesome": "^5.0.0",
-    "mongodb": "^3.5.5",
-    "save": "^2.4.0"
+    "mongodb": "^3.5.5"
   }
 }
