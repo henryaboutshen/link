@@ -1,21 +1,22 @@
-var assert = require('assert');
+const assert = require('assert');
+const { generateGlobals } = require('../src/globals-generator')
+const MongoClient = require('mongodb').MongoClient;
+
+var client;
 
 before(async function () {
-    await console.log("before!!!");
+    client = await MongoClient.connect("mongodb://localhost:27017/", { useUnifiedTopology: true });
 });
 
-describe('Array', function () {
-    describe('#indexOf()', function () {
-        it('should return -1 when the value is not present', function () {
-            assert.equal([1, 2, 3].indexOf(4), -1);
-        });
-    });
-});
+after(function () {
+    client.close();
+})
 
-describe('List', function () {
-    describe('#indexOf()', function () {
-        it('should return -1 when the value is not present', function () {
-            assert.equal([1, 2, 3].indexOf(4), -1);
-        });
+describe('#find()', function () {
+    it('responds with matching records', async function () {
+        let res = await client.db("atp").collection("sanity").find({}).toArray();
+        console.log(res)
+        generateGlobals({ 'a': 1 })
+        assert.equal([1, 2, 3].indexOf(4), -1);
     });
 });

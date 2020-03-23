@@ -1,10 +1,10 @@
 {
   "name": "link",
   "version": "1.0.0",
-  "description": "MongoDB Sample.",
-  "main": "index.js",
+  "description": "A generator to generate Newman globals with data from MongoDB.",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node globals-generator.js",
+    "start": "node src/globals-generator.js",
     "test": "mocha --reporter mochawesome --reporter-options inline=true"
   },
   "repository": {
@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/HenrySHENhr/link#readme",
   "dependencies": {
+    "lodash": "^4.17.15",
     "mocha": "^7.1.1",
     "mochawesome": "^5.0.0",
-    "mongodb": "^3.5.5"
+    "mongodb": "^3.5.5",
+    "save": "^2.4.0"
   }
 }
