@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/HenrySHENhr/link#readme",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mocha": "^7.1.1",
     "mochawesome": "^5.0.0",
     "mongodb": "^3.5.5"
